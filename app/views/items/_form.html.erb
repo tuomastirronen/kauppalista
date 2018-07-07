@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-md-12">
+        <%= form_for @item do |f| %>  
+            <div class="form-group">
+                <div class="input-group">
+                    <%= f.text_field :name, :class => 'form-control' %>
+                    <span class="input-group-btn">
+                        <%= f.submit 'Lisää', :class => 'btn btn-primary' %>
+                    </span>
+                </div>
+            </div>
+            
+        <% end %>
+    </div>
+</div>
