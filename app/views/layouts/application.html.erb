@@ -18,6 +18,9 @@
         </div>   
       <% end %>      
       <%= yield %>
+      <% if user_signed_in? %>
+        <%= link_to "Kirjaudu ulos", destroy_user_session_path, :method => :delete %>
+      <% end %>      
     </div>
   </body>
 </html>
