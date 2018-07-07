@@ -1,9 +1,6 @@
 <li class="list-group-item d-flex justify-content-between align-items-center">
-    <%= item.name %>
-    <a href="#">    
-        
-    </a>
-    <%= link_to items_path(:id => item.id), method: :delete do %>
-        <span class="pull-right glyphicon glyphicon-ok"></span>
+    <%= item.name %>    
+    <%= link_to items_path(:id => item.id), method: :delete, remote: true do %>
+        <span class="pull-right glyphicon glyphicon-remove"></span>
     <% end %>
 </li>
